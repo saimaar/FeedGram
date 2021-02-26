@@ -11,4 +11,9 @@ var firebaseConfig = {
   };
 
   const firebase = window.firebase.initializeApp(firebaseConfig);
-  export { firebase };
+  const { FieldValue } = window.firebase.firestore;
+
+  export { firebase, FieldValue };
+
+  //field value will allows us to make modification to our data
+  // gives us array and string methods
